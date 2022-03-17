@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +22,20 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['middleware' => 'auth', 'middleware' => 'verified'], function	() {
+
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/catalog', 'ProductoController@catalogo')->name('catalogo');
+
+    Route::resource('clientes', 'ClienteController');
+    Route::resource('productos', 'ProductoController');
+
+
+    Route::get('/carrito', function () {
+        return view('carrito');
+    })->name('carrito');;
+
+});
