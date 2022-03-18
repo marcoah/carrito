@@ -76,6 +76,12 @@
                                             <input type="text" class="form-control" id="precio" name="precio" placeholder="" value="{{ $producto->precio }}" required>
                                         </div>
                                     </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-8">
+                                            <label for="descripcion">descripcion</label>
+                                            <textarea class="form-control" id="descripcion" name="descripcion" rows=4>{{ $producto->descripcion }}</textarea>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

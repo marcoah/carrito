@@ -46,15 +46,15 @@
                             <a class="nav-link" href="{{ route('catalogo') }}">Catalogo</a>
                         </li>
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Documentos
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Cotizacion</a>
-                            <a class="dropdown-item" href="#">Venta</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Reportes</a>
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Documentos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Cotizacion</a>
+                                <a class="dropdown-item" href="#">Venta</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Reportes</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled">Correo</a>

@@ -19,6 +19,7 @@ class CreateProductosTable extends Migration
             $table->string('codigo')->nullable();
             $table->string('marca')->nullable();
             $table->string('modelo')->nullable();
+            $table->text('descripcion')->nullable();
             $table->bigInteger('cantidad')->default(0);
             $table->double('precio', 8, 2)->default(0);
             $table->timestamps();

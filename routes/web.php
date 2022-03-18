@@ -22,8 +22,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
-
 Route::group(['middleware' => 'auth', 'middleware' => 'verified'], function	() {
 
     Route::get('/home', 'HomeController@index')->name('home');
@@ -33,9 +31,11 @@ Route::group(['middleware' => 'auth', 'middleware' => 'verified'], function	() {
     Route::resource('clientes', 'ClienteController');
     Route::resource('productos', 'ProductoController');
 
+    Route::get('carrito/{sesion}','CarritoController@mostrarcarrito')->name('carrito');
 
-    Route::get('/carrito', function () {
-        return view('carrito');
-    })->name('carrito');;
+    Route::post('/carrito','CarritoController@agregaritem')->name('carrito.agregaritem');
 
+    Route::post('carrito/{item}','CarritoController@removeitem')->name('carrito.removeitem');
+
+    Route::get('vaciar/{sesion}','CarritoController@vaciarcarrito')->name('carrito.vaciar');
 });

@@ -54,25 +54,31 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-8">
                                             <label for="marca">marca</label>
-                                            <input type="text" class="form-control" id="marca" name="marca" placeholder="">
+                                            <input type="text" class="form-control" id="marca" name="marca">
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-8">
                                             <label for="modelo">modelo</label>
-                                            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="">
+                                            <input type="text" class="form-control" id="modelo" name="modelo">
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-8">
                                             <label for="cantidad">cantidad</label>
-                                            <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="" required>
+                                            <input type="number" class="form-control" id="cantidad" name="cantidad" required>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-8">
                                             <label for="precio">precio</label>
-                                            <input type="text" class="form-control" id="precio" name="precio" placeholder="" required>
+                                            <input type="text" class="form-control" id="precio" name="precio" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-8">
+                                            <label for="descripcion">descripcion</label>
+                                            <textarea class="form-control" id="descripcion" name="descripcion" rows=4></textarea>
                                         </div>
                                     </div>
                                 </div>
